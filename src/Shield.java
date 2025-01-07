@@ -12,29 +12,29 @@ public class Shield {
     private int wisdomBonus;
 
 
-    public Shield (String material){
+    public Shield(String material){
 
         if (material.equals("wood")) {
-            weight = 10;
-            thickness = 5;
-            hitpoints = 5;
-            strengthBonus = 1;
-            dexterityBonus = -1;
-            constitutionBonus = 1;
-            intelligenceBonus = 0;
-            charismaBonus = 0;
-            wisdomBonus = 0;
+            this.weight = 10;
+            this.thickness = 5;
+            this.hitpoints = 5;
+            this.strengthBonus = 1;
+            this.dexterityBonus = -1;
+            this.constitutionBonus = 1;
+            this.intelligenceBonus = 0;
+            this.charismaBonus = 0;
+            this.wisdomBonus = 0;
         }
         if (material.equals("steel")) {
-            weight = 20;
-            thickness = 10;
-            hitpoints = 10;
-            strengthBonus = 2;
-            dexterityBonus = -2;
-            constitutionBonus = 2;
-            intelligenceBonus = 0;
-            charismaBonus = 0;
-            wisdomBonus = 0;
+            this.weight = 20;
+            this.thickness = 10;
+            this.hitpoints = 10;
+            this.strengthBonus = 2;
+            this.dexterityBonus = -2;
+            this.constitutionBonus = 2;
+            this.intelligenceBonus = 0;
+            this.charismaBonus = 0;
+            this.wisdomBonus = 0;
         }
         else {
             System.out.println("Shield material unavailable");
@@ -120,5 +120,17 @@ public class Shield {
 
     public int getWisMod() {
         return wisdomBonus;
+    }
+
+    public double getWeight(){
+        return weight;
+    }
+
+    public int getThickness(){
+        return thickness;
+    }
+
+    public int getHitPoints(){
+        return hitpoints;
     }
 }
